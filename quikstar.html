@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte avec openstreetmap et leatflet</title>
+    <!--2. Ajouter le liens vers la css de leatflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <!--4, ajouter de la css pour cette page-->
+    <style>
+        /*Dimension de la carte */
+        #carte {
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+      <h1>Carte avec openstreetmap</h1>
+      <!----1, ajouter un conteneur qui contient la carte à afficher -->  
+      <div id="carte"></div>
+
+
+
+
+
+
+
+
+
+
+
+      <!--ajouter le lien vers le js de leaflt (via un CDN) -->
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""></script>
+      <!--5. ajout d'un fichier js pour définir notre carte (à placer après le CD Leaflet)-->
+      <script src="excarte01.js"></script>
+</body>
+</html>

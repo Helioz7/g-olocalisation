@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <title>big ben</title>
+    <style>
+
+         .global{
+            display: grid;
+            grid-template-columns: 400px 400px;
+            grid-template-rows: 80px 400px 150px;
+            grid-template-areas: 
+            "titre titre"
+            "carte photo"
+            "texte photo";
+            gap: 15px;
+            justify-content: center;
+        }
+        
+        h1{
+            grid-area: titre;
+            text-align: center;
+        }
+        
+        #carte {
+            grid-area:carte;
+        }
+
+        #text {
+         grid-area:texte;
+         text-align: justify;
+         font: 1,5em;
+        }
+        .ben {
+          grid-area: photo;
+          height: 700px;
+        }
+
+    </style>
+</head>
+<body><div class="global">
+    <h1>bigben</h1>
+      <div id="carte"></div>
+      <div id="texte">
+        <p> Big Ben has great significance in popular culture and is considered one of the main symbols of the United Kingdom. It is one of the cultural icons of the country which can be seen on the local currency and most of the local tourism advertisements. Just lake many of other famous landmarks of the world located in various countries of the planet, Big Ben is on the list of the UNESCO World Heritage Sites and is being protected by that organization. The landmark is occasionally renovated. For example, a recent renovation resulted in building-in an elevator into the tower, so those who cannot use steps for climbing up can get a chance to enjoy the views from the tower's upper levels.</p>
+      </div>
+      <img class="ben" src="big ben.jpg" alt="photo">
+    </div>
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""></script>
+      <!--5. ajout d'un fichier js pour définir notre carte (à placer après le CD Leaflet)-->
+      <script src="excarte02.js"></script>
+    
+</body>
+</html>
